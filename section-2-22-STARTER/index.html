@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <title>VueJS Course</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app">
+    <ul>
+      <li v-for="(bird, index) in birds" :key="bird">{{ bird }} - {{ index }}</li>
+    </ul>
+    <ul>
+      <li v-for="person in people">
+        <div v-for="(item, key) in person">
+          {{ key }} - {{ item }} - {{ index }}
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
